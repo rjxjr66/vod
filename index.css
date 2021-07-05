@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+
+header {
+    position: relative;
+}
+
+svg,
+h1,
+button {
+    position: absolute;
+}
+
+svg {
+    left: 16px;
+    top: 16px;
+}
+
+button {
+    right: 16px;
+    top: 16px;
+}
