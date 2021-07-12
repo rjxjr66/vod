@@ -1,9 +1,14 @@
 body {
     margin: 0;
+    background: black;
 }
 
 header {
     position: relative;
+}
+
+img {
+    max-width: 100%;
 }
 
 svg,
@@ -15,9 +20,63 @@ button {
 svg {
     left: 16px;
     top: 16px;
+    width: 150px;
+    fill: red;
 }
 
 button {
     right: 16px;
     top: 16px;
+    padding: 8px 16px;
+    background: red;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+h1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+article {
+    display: flex;
+    color: white;
+}
+
+article:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+article div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.floating-btn {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    background: red;
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    box-shadow: 2px 2px 8px 0px rgba(255, 255, 255, 0.75);
+}
+
+.floating-btn:hover {
+    transform: translate(2px, 2px);
+    box-shadow: none;
 }
