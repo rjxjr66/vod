@@ -1,9 +1,14 @@
 body {
     margin: 0;
+    background: #000;
 }
 
 header {
     position: relative;
+}
+
+img {
+    max-width: 100%;
 }
 
 svg,
@@ -15,9 +20,46 @@ button {
 svg {
     left: 16px;
     top: 16px;
+    width: 100px;
+    fill: red;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 50%;
+    font-size: 50px;
+    text-align: center;
+}
+
+button {
+    color: white;
+    background: red;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
 }
 
 button {
     right: 16px;
     top: 16px;
+}
+
+article {
+    display: flex;
+    color: #fff;
+    font-size: 24px;
+    padding: 24px;
+}
+
+article h1 {
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+
+article>div {
+    flex: 1;
 }
