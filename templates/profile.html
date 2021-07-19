@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Netflix</title>
+    <link href="/static/css/profile.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        {% if user['subscribed'] %}
+        <div>
+            <h1>{{user["name"]}}님, 넷플릭스를 시청할 프로필을 선택해주세요.</h1>
+            <div class="profiles">
+                {% for profile in user['profiles'] %}
+                <div class="item">
+                    <img src="{{profile['image']}}">
+                    <span>{{profile['name']}}</span>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% else %}
+        <h1>결제를 부탁드립니다.</h1>
+        {% endif %}
+    </div>
+</body>
+
+</html>
